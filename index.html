@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="checkout-header">
+      Checkout
+      <span
+        style="
+          background: #222;
+          color: #fff;
+          font-size: 0.96rem;
+          border-radius: 12px;
+          padding: 3px 13px;
+          font-weight: 500;
+          margin-left: 10px;
+        "
+        >3 ITEMS</span
+      >
+    </div>
+    <div class="checkout-container">
+      <div class="left-panel">
+        <div>
+          <ul class="item-list">
+            <li class="item-row">
+              <div class="item-image">
+                <img
+                  src="./device-shop-checkout-master/resources/Gold.png"
+                  width="40"
+                  height="50"
+                  alt="iPhone 12 Pro"
+                />
+              </div>
+              <div class="item-detail">
+                <span class="item-name">iPhone 12 Pro</span><br />
+                <span class="item-color">Golden</span><br />
+                <span class="item-qty">x 1</span>
+              </div>
+              <div class="item-price">$999.00</div>
+              <button class="remove-btn">&times;</button>
+            </li>
+            <li class="item-row">
+              <div class="item-image">
+                <img
+                  src="./device-shop-checkout-master/resources/Apple-watch.png"
+                  width="43"
+                  height="50"
+                  alt="Apple Watch"
+                />
+              </div>
+              <div class="item-detail">
+                <span class="item-name">Apple Watch</span><br />
+                <span class="item-color">Blue</span><br />
+                <span class="item-qty">x 1</span>
+              </div>
+              <div class="item-price">$399.00</div>
+              <button class="remove-btn">&times;</button>
+            </li>
+            <li class="item-row">
+              <div class="item-image">
+                <img
+                  src="./device-shop-checkout-master/resources/iMac.png"
+                  width="47"
+                  height="40"
+                  alt="iMac"
+                />
+              </div>
+              <div class="item-detail">
+                <span class="item-name">iMac</span><br />
+                <span class="item-color">Green</span><br />
+                <span class="item-qty">x 1</span>
+              </div>
+              <div class="item-price">$1199.00</div>
+              <button class="remove-btn">&times;</button>
+            </li>
+          </ul>
+          <div class="coupon-row">
+            <input class="coupon-input" placeholder="Enter coupon code" />
+            <button class="apply-coupon-btn">Apply Coupon</button>
+          </div>
+          <div class="totals">
+            <div><span>Sub total</span><span>$2597.00</span></div>
+            <div><span>Tax</span><span>$623.28</span></div>
+            <div class="total"><span>Total</span><span>$3220.28</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="contact-header">Contact Information</div>
+        <form class="checkout-form">
+          <label>First &amp; Last name</label>
+          <input type="text" placeholder="Enter first & last name" />
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter email address" />
+          <div class="form-row">
+            <div style="flex: 1">
+              <label>Country</label>
+              <select>
+                <option>Finland</option>
+                <option>Sweden</option>
+                <option>Norway</option>
+                <option>Germany</option>
+              </select>
+            </div>
+            <div style="flex: 1">
+              <label>Postal Code</label>
+              <input type="text" placeholder="00270" />
+            </div>
+          </div>
+          <button class="continue-btn" type="submit">Continue</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
